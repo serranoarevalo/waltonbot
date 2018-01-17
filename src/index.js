@@ -1,10 +1,10 @@
-import microAPI from 'micro-api';
-import hello from './controllers/hello.js';
+import microAPI from "micro-api";
+import index from "./controllers/index.js";
 
 exports.default = microAPI([
   {
-    method: 'get',
-    path: '/',
-    handler: hello
+    method: "get",
+    path: "/",
+    handler: index
   }
 ]);

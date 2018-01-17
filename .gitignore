@@ -62,3 +62,5 @@ typings/
 /dist
 dist
 flow-typed
+dates.js
+keys.js
