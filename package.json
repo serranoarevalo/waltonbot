@@ -1,0 +1,10 @@
+{
+  "name": "waltonbot",
+  "version": "1.0.0",
+  "description": "ExpressJS App built to remind big families everybody's birthdays.",
+  "main": "index.js",
+  "repository": "https://github.com/serranoarevalo/waltonbot",
+  "author": "Nicolás Serrano Arévalo <itnico.las.me@gmail.com>",
+  "license": "MIT",
+  "private": false
+}
