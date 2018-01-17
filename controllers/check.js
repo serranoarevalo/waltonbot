@@ -2,9 +2,12 @@ const { dates, people } = require("../data");
 const send = require("./send");
 function check() {
   // Get the current date
-  const CURRENT_DATE = "04-11";
+  const date = new Date();
+  const month = date.getMonth() + 1;
+  const day = date.getDate();
+  const currentDate = `${month}-${day}`;
   // Select the people inside of it
-  const selected = dates[CURRENT_DATE];
+  const selected = dates[currentDate];
   // If there are people selected
   if (selected) {
     selected.forEach(bperson => {
