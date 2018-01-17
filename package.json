@@ -2,11 +2,11 @@
   "name": "micro-rest",
   "version": "0.0.0",
   "description": "micro-rest",
-  "main": "index.js",
   "scripts": {
-    "start": "yarn run build && micro dist/bundle.js",
+    "start": "yarn run build && micro dist/bundle.js --watch",
     "build": "webpack",
-    "watch": "webpack -w && micro dist/bundle.js"
+    "watch": "webpack -w",
+    "dev": "yarn run build && micro-dev dist/bundle.js"
   },
   "repository": "https://github.com/hyperfuse/micro-rest.git",
   "author": "Kennet Postigo",
@@ -15,15 +15,13 @@
     "micro": "^6.2.0",
     "micro-api": "^0.0.11",
     "micro-compress": "^1.0.0",
-    "node-fetch": "^1.7.3"
+    "twilio": "^3.11.0"
   },
   "devDependencies": {
     "babel-core": "^6.21.0",
     "babel-loader": "^6.2.10",
-    "babel-plugin-transform-flow-strip-types": "^6.21.0",
     "babel-preset-es2015": "^6.18.0",
-    "flow-bin": "^0.37.4",
-    "nodemon": "^1.14.11",
+    "micro-dev": "^2.2.0",
     "webpack": "2.2.0-rc.7"
   }
 }
