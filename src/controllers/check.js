@@ -1,8 +1,8 @@
-import { dates, people } from "../dates";
-import send from "./send";
+const { dates, people } = require("../data");
+const send = require("./send");
 function check() {
   // Get the current date
-  const CURRENT_DATE = "05-08";
+  const CURRENT_DATE = "04-11";
   // Select the people inside of it
   const selected = dates[CURRENT_DATE];
   // If there are people selected
@@ -15,4 +15,4 @@ function check() {
     });
   }
 }
-export default check;
+module.exports = check;

@@ -1,5 +1,5 @@
-import microAPI from "micro-api";
-import index from "./controllers/index.js";
+const microAPI = require("micro-api");
+const index = require("./controllers/index.js");
 
 exports.default = microAPI([
   {

@@ -1,4 +1,4 @@
-import check from "./check";
+const check = require("./check");
 function index() {
   let started = false;
   if (!started) {
@@ -11,4 +11,4 @@ function index() {
   return "ok";
 }
 
-export default index;
+module.exports = index;
