@@ -8,7 +8,7 @@ function send(name, list) {
     // Message template
     const template = `Hola ${
       person.name
-    }\nTe queremos recordar que hoy es el cumpleaños de ${name}\nAtentamente: Los Walton`;
+    } \nTe queremos recordar que hoy es el cumple de ${name} \nAtentamente: Los Walton`;
     // Send message
     client.messages
       .create({

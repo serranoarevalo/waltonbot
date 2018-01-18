@@ -1,10 +1,7 @@
 const check = require("./check");
 
 function activate() {
-  setInterval(() => {
-    started = true;
-    check();
-  }, 86400000);
+  setInterval(check, 86400000);
   check();
   return "activated";
 }
