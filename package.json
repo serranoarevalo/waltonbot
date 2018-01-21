@@ -11,6 +11,7 @@
   "dependencies": {
     "micro": "^6.2.1",
     "micro-api": "^0.0.11",
+    "node-fetch": "^1.7.3",
     "twilio": "^3.11.0"
   },
   "devDependencies": {
